@@ -246,7 +246,7 @@
         form_data;
     function done_func(response) {
         message.fadeIn().removeClass('alert-danger').addClass('alert-success');
-        message.text(response);
+        message.text('Cảm ơn bạn đã phản hồi cho chúng tôi.');
         setTimeout(function () {
             message.fadeOut();
         }, 2000);
@@ -254,7 +254,7 @@
     }
     function fail_func(data) {
         message.fadeIn().removeClass('alert-success').addClass('alert-success');
-        message.text(data.responseText);
+        message.text('Cảm ơn bạn đã phản hồi cho chúng tôi.');
         setTimeout(function () {
             message.fadeOut();
         }, 2000);
